@@ -19,7 +19,7 @@ SESSION = environ.get("SESSION", "Media_search")
 API_ID = int(environ.get("API_ID", "25331263"))
 API_HASH = environ.get("API_HASH", "cab85305bf85125a2ac053210bcd1030")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
-PORT = environ.get("PORT", "8082")
+PORT = int(environ.get("PORT", "8082"))
 
 # Owners
 ADMINS = [
@@ -101,7 +101,6 @@ LANGUAGES = [
     "marathi",
     "gujarati",
     "punjabi",
-    "marathi",
 ]
 QUALITIES = [
     "HdRip",
@@ -164,16 +163,13 @@ LINK_MODE = is_enabled("LINK_MODE", True)
 TMDB_API_KEY = environ.get("TMDB_API_KEY", "")
 
 # Online Streaming And Download
-STREAM_MODE = bool(environ.get("STREAM_MODE", True))  # Set True or Flase
+STREAM_MODE = is_enabled(environ.get("STREAM_MODE", "True"), True) # Set True or Flase
 
 MULTI_CLIENT = False
 SLEEP_THRESHOLD = int(environ.get("SLEEP_THRESHOLD", "60"))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-if "DYNO" in environ:
-    ON_HEROKU = True
-else:
-    ON_HEROKU = False
-URL = environ.get("FQDN", "")
+ON_HEROKU = "DYNO" in environ
+URL = environ.get("FQDN", "https://governing-charlotta-jsssbeniwal2005-521fd1ef.koyeb.app/")
 
 # Commands
 admin_cmds = [
