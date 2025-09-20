@@ -53,7 +53,7 @@ FILES_DATABASE = environ.get("FILES_DATABASE", "mongodb+srv://rs92573993688:pVf4
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "arsh_benwail")
 
 # Other Channel's
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002746874071"))
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002888391802"))
 DELETE_CHANNELS = int(environ.get("DELETE_CHANNELS", "0"))
 request_channel = environ.get("REQUEST_CHANNEL", "-1003043840089")
 REQUEST_CHANNEL = (
@@ -65,7 +65,7 @@ MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1002474527052")
 
 # Added Link Here Not Id
 SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "https://t.me/arsh_beniwal")
-MOVIE_GROUP_LINK = environ.get("MOVIE_GROUP_LINK", "https://t.me/allbotsupdates1")
+MOVIE_GROUP_LINK = environ.get("MOVIE_GROUP_LINK", "https://t.me/+979oIquygb05YThl")
 
 # Verification
 IS_VERIFY = is_enabled("IS_VERIFY", True)
